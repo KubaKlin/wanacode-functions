@@ -6,10 +6,12 @@ function getGreetings(name) {
 
 // 2
 function isThisMyName(personName) {
-  if (personName == true) return true;
+  if (personName === 'Kuba') {
+    return true;
+  }
   return false;
 }
-console.log(isThisMyName(''));
+console.log(isThisMyName('Kuba'));
 
 // 3
 function isThisBoolean(testValue) {
