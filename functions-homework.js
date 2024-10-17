@@ -31,7 +31,7 @@ function getCirclesAreaSum(radiusOne, radiusTwo) {
 console.log(getCirclesAreaSum(5, 10))
 
 // 6
-const quarterOf = (month) => {
+const getQuarterOfYear = (month) => {
   if (month <= 3) {
     return 1;
   } if (month <= 6) {
@@ -41,4 +41,4 @@ const quarterOf = (month) => {
   }
   return 4;
 }
-console.log (quarterOf(4));
+console.log (getQuarterOfYear(4));
