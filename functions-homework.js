@@ -1,22 +1,18 @@
 // 1
-function getGreetings(name) {
+function greetingsAlert(name) {
   alert('Hi, ' + name + ' What`s up?');
 }
 //getGreetings('kuba klin');
 
 // 2
 function isThisMyName(personName) {
-  if (personName === 'Kuba') {
-    return true;
-  }
-  return false;
+  return personName === 'Kuba';
 }
 console.log(isThisMyName('Kuba'));
 
 // 3
 function isThisBoolean(testValue) {
-  if (typeof testValue == 'boolean') return true;
-  return false;
+  return typeof testValue == 'boolean'
 }
 console.log(isThisBoolean(false))
 
@@ -33,12 +29,14 @@ function getCirclesAreaSum(radiusOne, radiusTwo) {
 console.log(getCirclesAreaSum(5, 10))
 
 // 6
-const getQuarterOfYear = (month) => {
+function getQuarterOfYear(month) {
   if (month <= 3) {
     return 1;
-  } if (month <= 6) {
+  }
+  if (month <= 6) {
     return 2;
-  } if (month <= 9) {
+  }
+  if (month <= 9) {
     return 3;
   }
   return 4;
