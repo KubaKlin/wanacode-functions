@@ -1,10 +1,10 @@
 // 1
-function greetingsAlert(name) {
-  alert('Hi, ' + name + ' What`s up?');
+function getGreeting(name, surname) {
+  return 'Hi, ' + name + ' ' + surname + ' What`s up?';
 }
-//getGreetings('kuba klin');
+console.log(getGreeting('kuba', 'klin'));
 
-// 2
+//
 function isThisMyName(personName) {
   return personName === 'Kuba';
 }
@@ -12,9 +12,9 @@ console.log(isThisMyName('Kuba'));
 
 // 3
 function isThisBoolean(testValue) {
-  return typeof testValue == 'boolean'
+  return typeof testValue == 'boolean';
 }
-console.log(isThisBoolean(false))
+console.log(isThisBoolean(false));
 
 // 4
 function getCircleArea(radius) {
@@ -26,7 +26,7 @@ console.log(getCircleArea(10));
 function getCirclesAreaSum(radiusOne, radiusTwo) {
   return getCircleArea(radiusOne) +  getCircleArea(radiusTwo);
 }
-console.log(getCirclesAreaSum(5, 10))
+console.log(getCirclesAreaSum(5, 10));
 
 // 6
 function getQuarterOfYear(month) {
